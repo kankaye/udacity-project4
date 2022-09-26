@@ -24,8 +24,8 @@ source ~/.devops/bin/activate
 
 ## Explanation of the files in the repository
 
-`Dockerfile` includes the instructions of how to containerize the application `app.py`. 
-`make_predictions.sh` is to make house price predictions, we need to run the shell script  while the app is up. In this script, it send a POST request to containerized application via the appropriate portwith a json object that contains the concrete values (the input) of the features of the prediction model.
-`docker_out.txt` and `kubernetes_out.txt` give examples of the expected output of running the app in Docker and Kubernetes. 
-`upload_docker.sh` file is used to share the created Docker image
-`config.yml` in `.circleci` folder is to setup a CICD pipeline to fully automate the process
+1. `Dockerfile` includes the instructions of how to containerize the application `app.py`. 
+2. `make_predictions.sh` is to make house price predictions, we need to run the shell script  while the app is up. In this script, it send a POST request to containerized application via the appropriate portwith a json object that contains the concrete values (the input) of the features of the prediction model.
+3. `docker_out.txt` and `kubernetes_out.txt` give examples of the expected output of running the app in Docker and Kubernetes. 
+4. `upload_docker.sh` file is used to share the created Docker image
+5. `config.yml` in `.circleci` folder is to setup a CICD pipeline to fully automate the process
